@@ -23,6 +23,16 @@
 
 ;;; Commentary:
 
+
+;; Installation:
+
+;; Add the following to your emacs init file:
+;;
+;; (require 'helm-spaces)  ;; Not necessary if using ELPA package
+;; (global-set-key (kbd "C-c s") 'helm-spaces)
+
+;; That's all.
+
 ;;; Code:
 
 (require 'helm)
