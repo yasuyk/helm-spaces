@@ -81,6 +81,7 @@
                 (lambda (dummy) (sp-clear-spaces))))))
   "Show all spaces.")
 
+;;;###autoload
 (defun helm-spaces ()
   "Helm to list spaces and to create a new space."
   (interactive)
