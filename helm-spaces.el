@@ -72,7 +72,7 @@
   "Show all spaces.")
 
 (defun helm-spaces ()
-  "Helm to list spaces."
+  "Helm to list spaces and to create a new space."
   (interactive)
   (helm-other-buffer '(helm-source-spaces
                        helm-source-space-create)
