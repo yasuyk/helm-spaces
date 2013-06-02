@@ -7,7 +7,8 @@
 ## Requirements
 
 - Emacs 23 or higher.
-- helm 1.0 or higher
+- helm 1.0 or higher.
+- spaces 0.1.0 or higher.
 
 ## Installation
 
