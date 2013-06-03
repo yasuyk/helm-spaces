@@ -26,7 +26,7 @@
 
 ;; Installation:
 
-;; Add the following to your emacs init file:
+;; Add the following to your Emacs init file:
 ;;
 ;; (require 'helm-spaces)  ;; Not necessary if using ELPA package
 ;; (global-set-key (kbd "C-c s") 'helm-spaces)
@@ -43,7 +43,7 @@
   :group 'helm)
 
 (defcustom helm-spaces-new-space-query t
-  "Non-nil means ask user before `sp-new-space'."
+  "Non-nil means ask user before `sp-new-space', If a space with same name already exists."
   :type '(choice (const :tag "Don't ask" nil)
                  (other :tag "Ask" t))
   :group 'helm-spaces)
@@ -57,7 +57,7 @@
 (defun helm-spaces-new-space (name)
   "Create a new space with the given NAME.
 
-If There is NAME in `sp-spaces' and `helm-spaces-new-space-query' is t,
+If There is already NAME in `sp-spaces' and `helm-spaces-new-space-query' is t,
 ask user replacing old space."
   (catch 'return
     (when helm-spaces-new-space-query
