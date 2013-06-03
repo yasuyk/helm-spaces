@@ -60,12 +60,11 @@
 If There is already NAME in `sp-spaces' and `helm-spaces-new-space-query' is t,
 ask user replacing old space."
   (catch 'return
-    (when helm-spaces-new-space-query
-      (unless (and
+    (when (and helm-spaces-new-space-query
                (cl-find-if
                 (lambda (space) (equal name (car space)))
-                sp-spaces)
-               (y-or-n-p (format "Replace old %s? " name)))
+                sp-spaces))
+      (unless (y-or-n-p (format "Replace old %s? " name))
         (throw 'return nil)))
     (sp-new-space name)))
 
