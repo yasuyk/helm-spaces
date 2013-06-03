@@ -42,11 +42,32 @@
   "Spaces related Applications and libraries for Helm."
   :group 'helm)
 
+(defcustom helm-spaces-new-space-query t
+  "Non-nil means ask user before `sp-new-space'."
+  :type '(choice (const :tag "Don't ask" nil)
+                 (other :tag "Ask" t))
+  :group 'helm-spaces)
+
 ;;; Faces
 (defface helm-spaces-current-space
     '((t (:foreground "green")))
   "Face used for current space."
   :group 'helm-spaces)
+
+(defun helm-spaces-new-space (name)
+  "Create a new space with the given NAME.
+
+If There is NAME in `sp-spaces' and `helm-spaces-new-space-query' is t,
+ask user replacing old space."
+  (catch 'return
+    (when helm-spaces-new-space-query
+      (unless (and
+               (cl-find-if
+                (lambda (space) (equal name (car space)))
+                sp-spaces)
+               (y-or-n-p (format "Replace old %s? " name)))
+        (throw 'return nil)))
+    (sp-new-space name)))
 
 (defvar helm-source-space-create
   '((name . "Creates a new space")
@@ -57,7 +78,7 @@
     (action . (lambda (candidate)
                 (if (equal candidate "")
                     (sp-new-space)
-                  (sp-new-space candidate)))))
+                  (helm-spaces-new-space candidate)))))
   "Create a new space.")
 
 (defun helm-spaces-candidates ()
