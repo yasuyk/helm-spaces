@@ -98,6 +98,7 @@ ask user replacing old space."
     (candidates . helm-spaces-candidates)
     (action . (("Switch space" . sp-switch-space)
                ("Kill space" . sp-kill-space)
+               ("Replace space" . helm-spaces-new-space)
                ("Kill all spaces" .
                 (lambda (dummy) (sp-clear-spaces))))))
   "Show all spaces.")
