@@ -82,7 +82,7 @@ ask user replacing old space."
 
 (defun helm-spaces-candidates ()
   "Return a list of all spaces.
-`sp-current-space' is colored by `helm-spaces-current-space'."
+The currently selected space is colored by `helm-spaces-current-space'."
   (when sp-spaces
     (loop for sname in sp-spaces
           if (equal (car sname) sp-current-space)
