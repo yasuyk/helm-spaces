@@ -1,6 +1,6 @@
 ;;; helm-spaces.el --- helm sources for spaces
 
-;; Copyright (C) 2013 Yasuyuki Oka
+;; Copyright (C) 2013-2016 Yasuyuki Oka
 
 ;; Author: Yasuyuki Oka <yasuyk@gmail.com>
 ;; Version: 0.2
