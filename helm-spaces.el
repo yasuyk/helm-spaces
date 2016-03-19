@@ -5,7 +5,7 @@
 ;; Author: Yasuyuki Oka <yasuyk@gmail.com>
 ;; Version: 0.2
 ;; URL: https://github.com/yasuyk/helm-spaces
-;; Package-Requires: ((helm "1.0") (spaces "0.1.0"))
+;; Package-Requires: ((helm "1.9.3") (spaces "0.1.0"))
 ;; Keywords: helm frames convenience
 
 ;; This program is free software; you can redistribute it and/or modify
