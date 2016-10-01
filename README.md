@@ -1,4 +1,7 @@
-# helm-spaces.el [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
+# helm-spaces.el
+[![travis badge][travis-badge]][travis-link]
+[![melpa badge][melpa-badge]][melpa-link]
+[![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
 
 ## Introduction
 
@@ -43,6 +46,8 @@ Add the following to your emacs init file:
 [melpa]: http://melpa.milkbox.net
 [spaces]:https://github.com/chumpage/chumpy-windows#spaces
 [helm]:https://github.com/emacs-helm/helm
+[travis-badge]: https://travis-ci.org/yasuyk/helm-spaces.svg
+[travis-link]: https://travis-ci.org/yasuyk/helm-spaces
 [melpa-link]: http://melpa.org/#/helm-spaces
 [melpa-stable-link]: http://stable.melpa.org/#/helm-spaces
 [melpa-badge]: http://melpa.org/packages/helm-spaces-badge.svg
