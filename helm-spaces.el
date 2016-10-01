@@ -3,7 +3,7 @@
 ;; Copyright (C) 2013-2016 Yasuyuki Oka
 
 ;; Author: Yasuyuki Oka <yasuyk@gmail.com>
-;; Version: 0.3
+;; Version: 0.4
 ;; URL: https://github.com/yasuyk/helm-spaces
 ;; Package-Requires: ((helm-core "2.2") (spaces "0.1.0"))
 ;; Keywords: helm frames convenience
